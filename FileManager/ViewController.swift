@@ -47,7 +47,7 @@ extension ViewController {
 extension ViewController: UIDocumentPickerDelegate {
   
   func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
-    
+    PDFUploadFileApi().upload(filePath: url)
   }
   
 }
